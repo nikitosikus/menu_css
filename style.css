@@ -7,6 +7,7 @@ body {
 	max-width: 1450px;
 	width: 100%;
 }
+
 a {
 	text-decoration: none;
 }
@@ -15,11 +16,16 @@ ul, li {
 	padding: 0;
 	list-style-type: none;
 }
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+}
 .header {
 	max-width: 1450px;
 	width: 100%;
-	min-height: 100px;
-	height: 100%;
+	/*min-*/height: 100px;
+/*	height: 100%;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,6 +39,7 @@ ul, li {
 	justify-content: space-between;
 	align-items: center;
 }
+
 .header_logo {
 	width: 50px;
 	height: 50px;
@@ -77,6 +84,7 @@ ul, li {
 	justify-content: center;
 	box-shadow: 0 0 7px 1px #000;
 	border-radius: 0px 0px 0px 20px;
+	overflow: scroll;
 }
 #nav .nav_button_close {
 	position: absolute;
@@ -138,6 +146,21 @@ ul, li {
 	background: #316099;
 	border-radius: 20px;
 }
+@media only screen and (max-height: 400px) {
+	#nav {
+		
+		top: 0;
+		height: 80%;
+		min-height: 200px;
+		/*width: 100%;*/
+		/*max-width: 650px;*/
+		background: #356EAD;
+		display: flex;
+		justify-content: center;
+		box-shadow: 0 0 7px 1px #000;
+		border-radius: 0px 0px 0px 20px;
+	}
+}
 /*box1*/
 .box1 {
 	max-width: 1450px;
@@ -171,4 +194,16 @@ ul, li {
 	width: 50%;
 	height: 500px;
 	background: #316099;
+}
+/*box2*/
+.box2 {
+	max-width: 1450px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.box2 div {
+	max-width: 1250px;
+	width: 95%;
+	display: block;
 }
